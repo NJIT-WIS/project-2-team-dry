@@ -4,8 +4,20 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import React, {useState} from 'react'
 
 export default function Home({ allPostsData }) {
+  const [email, setEmail] = useState('')
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value)
+  }
+
+  const handleSignup = () => {
+    console.log('Email submitted:', email)
+    // Add your logic to collect the email address here
+  }
+
   return (
     <Layout home>
       <Head>
@@ -31,6 +43,16 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
+      </section>
+      <section>
+        <h2>Sign up for our newsletter</h2>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          value={email}
+          onChange={handleEmailChange}
+        />
+        <button onClick={handleSignup}>Sign up</button>
       </section>
     </Layout>
   )
