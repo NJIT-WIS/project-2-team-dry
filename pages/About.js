@@ -10,7 +10,7 @@ export default function About() {
             <title>MyWebClass.org | About</title>
         </Head>
         <section className={utilStyles.headingMd}>
-            <p class="lead">About Team DRY</p>
+            <p>About Team DRY</p>
         </section>
       </Layout>
   )
