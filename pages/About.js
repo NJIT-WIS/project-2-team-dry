@@ -1,11 +1,17 @@
 import React from 'react'
+import Head from 'next/head'
+import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../components/layout'
 
-function About() {
+export default function About() {
   return (
-    <div>
-      About team DRY
-    </div>
+      <Layout home>
+        <Head>
+            <title>MyWebClass.org | About</title>
+        </Head>
+        <section className={utilStyles.headingMd}>
+            <p class="lead">About Team DRY</p>
+        </section>
+      </Layout>
   )
 }
-
-export default About
