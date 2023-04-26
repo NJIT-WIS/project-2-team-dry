@@ -27,6 +27,7 @@ jobs:
       - name: Start the application
         run: |
           export DISPLAY=:1
+          npm run build
           npm run start
           npx wait-on http://localhost:3000
 
