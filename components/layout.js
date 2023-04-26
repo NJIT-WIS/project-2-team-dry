@@ -5,8 +5,9 @@ import Script from 'next/script'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbar from './Navbar'
 
-const name = '[Your Name]'
+const name = '[Team D.R.Y.]'
 export const siteTitle = 'MyWebClass.org'
 
 export default function Layout({ children, home }) {
@@ -27,6 +28,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <Navbar />
       <Script
         src="https://connect.facebook.net/en_US/sdk.js"
         strategy="lazyOnload"

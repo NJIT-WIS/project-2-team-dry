@@ -18,6 +18,23 @@ export default function Home({ allPostsData }) {
     // Add your logic to collect the email address here
   }
 
+  const inputStyle = {
+    padding: '8px 12px',
+    borderRadius: '4px',
+    border: '1px solid #ccc',
+    marginRight: '8px',
+    width: '250px',
+  }
+
+  const buttonStyle = {
+    padding: '8px 16px',
+    borderRadius: '4px',
+    backgroundColor: '#0070f3',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+  }
+
   return (
     <Layout home>
       <Head>
@@ -51,8 +68,11 @@ export default function Home({ allPostsData }) {
           placeholder="Enter your email"
           value={email}
           onChange={handleEmailChange}
+          style={inputStyle}
         />
-        <button onClick={handleSignup}>Sign up</button>
+        <button onClick={handleSignup} style={buttonStyle}>
+          Sign up
+        </button>
       </section>
     </Layout>
   )
