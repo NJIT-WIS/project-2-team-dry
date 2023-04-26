@@ -1,6 +1,9 @@
 .navbar {
     background-color: #f3f3f3;
-    padding: 1rem;
+    /* padding: 1rem; */
+    size: 40cm;
+    justify-content: space-between;
+    
   }
   
   .navList {
@@ -9,10 +12,11 @@
     padding: 0;
     display: flex;
     justify-content: center;
+    
   }
   
   .navItem {
-    margin: 0 1rem;
+    margin: 0 3rem;
   }
   
   .navLink {

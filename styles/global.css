@@ -25,3 +25,35 @@ img {
   max-width: 100%;
   display: block;
 }
+
+footer {
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
