@@ -41,7 +41,9 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p class="lead">MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
+                        enabling them to embark on a transformative learning journey.
+                        Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
