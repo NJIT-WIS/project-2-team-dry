@@ -2,7 +2,7 @@ name: Run Playwright and Generate a video, screenshots, and LightHouse HTML Repo
 
 on:
   push:
-    branches: "*"
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -27,7 +27,8 @@ jobs:
       - name: Start the application
         run: |
           export DISPLAY=:1
-          npm run start & npx wait-on http://localhost:3000
+          npm run start
+          npx wait-on http://localhost:3000
 
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
