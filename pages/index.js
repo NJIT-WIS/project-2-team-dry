@@ -41,7 +41,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p class="lead">MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
+        <p className="lead">MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
                         enabling them to embark on a transformative learning journey.
                         Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience</p>
         <p>
