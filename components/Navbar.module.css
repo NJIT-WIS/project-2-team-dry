@@ -11,12 +11,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-<<<<<<< HEAD
-    justify-content: space-around;
-=======
     justify-content: center;
-    
->>>>>>> main
   }
   
   .navItem {
