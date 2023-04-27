@@ -7,11 +7,11 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
   
   .navItem {
-    margin: 0 1rem;
+    margin: 0 3rem;
   }
   
   .navLink {

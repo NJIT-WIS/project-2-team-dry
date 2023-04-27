@@ -54,6 +54,7 @@ export default function Home({ allPostsData }) {
         </div>
       </div>
       <section style={{textAlign: 'center'}}>
+
         <h2>Sign up for our newsletter</h2>
         <input
           type="email"
