@@ -40,30 +40,21 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p className="lead">MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
-                        enabling them to embark on a transformative learning journey.
-                        Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-      <section>
+      <div style={{display: 'flex', margin: '5rem', justifyContent: 'flex-end', gap: '2rem'}}>
+        <div style={{width: '700px', display: 'flex', flexDirection: 'column'}}>
+            <h1> Transform your teaching </h1>
+            <p style={{ fontSize: '20px', textAlign: 'justify' }}>MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
+            enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience</p>
+            <button style={{width: '100px', height: '40px', backgroundColor: '#3d5a80', color: 'white', fontWeight: 'bold', cursor: 'pointer' }}>
+                Courses
+            </button>
+        </div>
+        <div style={{}}>
+            <img style={{ height: '400px', width: '400px'}} src="images/classroom.png" alt="a teacher with students" width="720px"/>
+        </div>
+      </div>
+      <section style={{textAlign: 'center'}}>
+
         <h2>Sign up for our newsletter</h2>
         <input
           type="email"

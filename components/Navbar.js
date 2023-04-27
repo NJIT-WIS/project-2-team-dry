@@ -12,6 +12,11 @@ export default function Navbar() {
           </Link>
         </li>
         <li className={styles.navItem}>
+          <Link href="/Blogs">
+          <h4 className={styles.navLink}> Blogs</h4>
+          </Link>
+        </li>
+        <li className={styles.navItem}>
           <Link href="/About">
             {/* <a className={styles.navLink}>About Us</a> */}
             <h4 className={styles.navLink}> About</h4>
