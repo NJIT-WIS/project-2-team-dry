@@ -34,15 +34,7 @@ test.describe('Accessibility tests', () => {
     expect(newsletterSection).toBeTruthy()
   })
 
-/*
-  test('Check if the email input field is labeled correctly', async () => {
-    const input = await page.$('input')
-    const label = await page.$('label[for="Enter your email"]')
-    const inputId = await input.getAttribute('id')
-    const labelFor = await label.getAttribute('for')
-    expect(inputId).toBe(labelFor)
-  })
-*/
+
 
   test('Check if the email input field has a correct placeholder', async () => {
     const input = await page.$('input')
@@ -50,49 +42,5 @@ test.describe('Accessibility tests', () => {
     expect(placeholder).toBe('Enter your email')
   });
 
-/*
- <button id="signup-button"  style={{padding: '8px 16px',borderRadius: '4px',backgroundColor: '#0070f3',color: 'white',border: 'none',cursor: 'pointer' }}>
-  Sign up
-  </button>
 
-
- test('Check if the newsletter signup button is labeled correctly', async () => {
-  await page.waitForSelector('#signup-button');
-  const button = await page.$('#signup-button');
-  const buttonText = await button.textContent();
-  expect(buttonText).toBe('Sign up');
-}); */
-
-/*
- test('Check if the newsletter signup button is labeled correctly', async () => {
-  const buttons = await page.$$('#signup-button');
-  const signupButton = buttons.find(async button => {
-    const buttonText = await button.textContent();
-    return buttonText === 'Sign up';
-  });
-  expect(signupButton).toBeTruthy();
-});
-*/
-
-/*
-  <button id="newsletter-btn"  style={{padding: '8px 16px',borderRadius: '4px',backgroundColor: '#0070f3',color: 'white',border: 'none',cursor: 'pointer' }}>
-  Sign up
-  </button>
-
-  test('Check if the newsletter signup button is labeled correctly', async () => {
-  const button = await page.$('#newsletter-btn')
-  console.log(button)
-  const buttonText = await button.textContent()
-  console.log(buttonText)
-  expect(buttonText).toBe('Sign up')
-})
-
-*/
-/*
-  test('Check if the newsletter signup button is labeled correctly', async () => {
-    const button = await page.$('button')
-    const buttonText = await button.textContent()
-    expect(buttonText).toBe('Sign up')
-  })
-  */
 })

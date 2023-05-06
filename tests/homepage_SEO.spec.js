@@ -14,12 +14,6 @@ test.describe('SEO tests', () => {
     await page.close()
   })
 
-/*
-  test('Check meta description', async () => {
-    const metaDescription = await page.$eval('meta[name="description"]', (el) => el.getAttribute('content'))
-    expect(metaDescription).toContain('MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills, enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience')
-  })
-*/
 
   test('Check image alt tags', async () => {
     const images = await page.$$('img')
@@ -55,18 +49,5 @@ test.describe('SEO tests', () => {
     }
   })
 
-/*
-  test('Check Structured Data', async ({ page }) => {
-  const structuredData = await page.$eval('script[type="application/ld+json"]', (el) => JSON.parse(el.textContent))
-  expect(structuredData['@context']).toContain('http://schema.org')
-  expect(structuredData['@type']).toContain('WebPage')
-  expect(structuredData['name']).toBeTruthy()
-  expect(structuredData['description']).toBeTruthy()
-})
 
-  test('Check structured data', async () => {
-    const structuredData = await page.$$eval('script[type="application/ld+json"]', (els) => els.map((el) => JSON.parse(el.innerHTML)))
-    expect(structuredData.length).toBeGreaterThan(0)
-  })
-*/
 })
