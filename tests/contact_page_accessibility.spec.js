@@ -33,11 +33,7 @@ test.describe('Accessibility tests', () => {
     }
   })
 
-/*
-  test('Check Submit button', async () => {
-    const submitButton = await page.$('.button')
-    expect(submitButton).toBeTruthy()
-  }) */
+
 
   test('Check accessibility tree for Contact page', async () => {
     const snapshot = await page.accessibility.snapshot()
