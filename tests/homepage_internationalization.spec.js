@@ -14,13 +14,7 @@ test.describe('Internationalization tests', () => {
     await page.close()
   })
 
-  /*
-  test('Check language attribute of HTML tag', async () => {
-    const langAttribute = await page.$eval('html', el => el.getAttribute('lang'))
-    expect(langAttribute).toBe('en')
-  })
-  */
-
+ 
   test('Check if course button text is in English', async () => {
     const courseButtonText = await page.$eval('button', el => el.innerText)
     expect(courseButtonText).toBe('Courses')
