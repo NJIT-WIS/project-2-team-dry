@@ -57,3 +57,28 @@ footer ul li a {
 footer ul li a:hover {
   text-decoration: underline;
 }
+
+footer h3 {
+  margin: 0 0 5px 0;
+}
+
+.fa-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.fa-icon-wrapper h2 {
+  color: #3d5a80;
+}
+
+.fa-icon-wrapper svg{
+  margin-left: 10px;
+  height: 32px;
+  width: 32px;
+}
+
+input[type="email"] {
+  margin-bottom: 10px;
+}
