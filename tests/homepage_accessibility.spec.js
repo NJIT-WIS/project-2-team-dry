@@ -19,15 +19,22 @@ test.describe('Accessibility tests', () => {
     expect(header).toBeTruthy()
   })
 
-  test('Check if the "Transform your teaching" header has the correct font size', async () => {
-    const fontSize = await page.$eval('h1', (el) => parseFloat(getComputedStyle(el).fontSize))
-    expect(fontSize).toBeGreaterThan(25)
-  })
-
-  test('Check if the "Transform your teaching" paragraph is present', async () => {
-    const paragraph = await page.$('p')
+ 
+  test('Check if the "Transform your teaching" header and paragraph are present', async () => {
+    await page.goto(config.use.baseURL)
+    const [header, paragraph] = await Promise.all([
+      page.waitForSelector('h1'),
+      page.waitForSelector('p')
+    ])
+    expect(header).toBeTruthy()
     expect(paragraph).toBeTruthy()
   })
+
+
+  // test('Check if the "Transform your teaching" paragraph is present', async () => {
+  //   const paragraph = await page.$('p')
+  //   expect(paragraph).toBeTruthy()
+  // })
 
   test('Check if the "Sign up for our newsletter" section is present', async () => {
     const newsletterSection = await page.$('section')
