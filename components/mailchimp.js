@@ -121,7 +121,7 @@ const CustomForm = ({ status, message, onValidated }) => {
 };
 
 const MailchimpFormContainer = () => {
-    const postUrl = `https://njit.us13.list-manage.com/subscribe/post?u=${process.env.NEXT_PUBLIC_MAILCHIMP_U}&id=${process.env.NEXT_PUBLIC_MAILCHIMP_ID}`;
+    const postUrl = `https://njit.us13.list-manage.com/subscribe/post?u=58e42dc29aadbaa66c7f6fb71&id=48004f334d`;
     return (
         <div>
             <MailchimpSubscribe
