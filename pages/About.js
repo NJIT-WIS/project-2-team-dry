@@ -9,7 +9,7 @@ const About = () => {
     {
       name: 'Keith Williams',
       designation: 'Instructor',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: '/images/KW.jpg',
     },
     {
       name: 'Yatindra Mahadik',
@@ -19,7 +19,7 @@ const About = () => {
     {
       name: 'Roopali Sarode',
       designation: 'Developer',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: '/images/rrs.jpg',
     },
     {
       name: 'Devika Vengurlekar',
