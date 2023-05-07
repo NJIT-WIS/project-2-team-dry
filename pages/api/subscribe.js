@@ -1,4 +1,6 @@
 import axios from 'axios'
+const dotenv = require('dotenv');
+dotenv.config();
 
 export default async (req, res) => {
   const { email, name, note } = req.body
@@ -7,9 +9,9 @@ export default async (req, res) => {
     return res.status(400).json({ error: 'Email is required' })
   }
 
-  const API_KEY = 'b834b3aae119e908e0ac6543b2d22c04-us13'
-  const API_SERVER = 'us13'
-  const AUDIENCE_ID = '48004f334d'
+  const API_KEY = process.env.MAILCHIMP_APIKEY
+  const API_SERVER = process.env.API_SERVER || 'us13'
+  const AUDIENCE_ID = process.env.AUDIENCE_ID ||'48004f334d'
   
   const url = `https://${API_SERVER}.api.mailchimp.com/3.0/lists/${AUDIENCE_ID}/members`
 
