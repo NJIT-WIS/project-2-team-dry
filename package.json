@@ -19,6 +19,8 @@
     "fs": "0.0.1-security",
     "glob": "^9.3.2",
     "gray-matter": "^4.0.3",
+    "mailchimp": "^1.2.1",
+    "mailchimp-api-v3": "^1.15.0",
     "next": "latest",
     "react": "18.2.0",
     "react-dom": "18.2.0",
