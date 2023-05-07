@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 
 
-const gtag = `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_GTAG}`;
+const gtag = "https://www.googletagmanager.com/gtag/js?id=G-EBW4CPCF5C";
 
 
 export default class MyDocument extends Document {
@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${process.env.GOOGLE_ANALYTICS_GTAG}', {
+                gtag('config', 'G-EBW4CPCF5C', {
                   page_path: window.location.pathname,
                 });
               `
