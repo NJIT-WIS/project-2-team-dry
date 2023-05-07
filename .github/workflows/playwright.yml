@@ -20,6 +20,9 @@ jobs:
           sudo apt-get install -y libvpx7 libevent-2.1-7 libopus0 libharfbuzz-icu0 libgstreamer-plugins-base1.0-0 libhyphen0 libmanette-0.2-0 libflite1 libgles2
           npm ci
           npx playwright install chromium
+          npm install @fortawesome/fontawesome-svg-core
+          npm install @fortawesome/free-solid-svg-icons
+          npm install @fortawesome/free-regular-svg-icons
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
           sudo npx playwright install-deps
 
