@@ -11,6 +11,14 @@
         {
         "path": "/Contact",
         "title": "MyWebClass.org | Contact"
+      },
+      {
+        "path": "/Blogs",
+        "title": "MyWebClass.org | Blogs"
+      },
+      {
+        "path": "/Privacy",
+        "title": "MyWebClass.org | Privacy"
       }
     ]
 }
