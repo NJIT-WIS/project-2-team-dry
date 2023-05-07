@@ -30,14 +30,14 @@ module.exports = defineConfig({
       },
       outputDir: path.join(__dirname, 'reports', 'desktop-chrome'),
     },
-    {
-      name: 'Mobile iPhone 12',
-      use: {
-        ...devices['iPhone 12'],
-        browserName: 'webkit',
-      },
-      outputDir: path.join(__dirname, 'reports', 'mobile-iphone-12'),
-    },
+    // {
+    //   name: 'Mobile iPhone 12',
+    //   use: {
+    //     ...devices['iPhone 12'],
+    //     browserName: 'webkit',
+    //   },
+    //   outputDir: path.join(__dirname, 'reports', 'mobile-iphone-12'),
+    // },
   ],
 
   // Specify the local development server to run before the tests
