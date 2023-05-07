@@ -17,7 +17,7 @@ module.exports = defineConfig({
     baseURL: process.env.DEFAULT_SITE_URL || 'http://localhost:3000',
     trace: 'on-first-retry',
     video: 'on',
-    timeout: 300000, // Global timeout for tests (in milliseconds)
+    timeout: 10000, // Global timeout for tests (in milliseconds)
   },
 
   // Define the projects to run, each with its own settings
