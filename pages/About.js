@@ -23,7 +23,7 @@ const About = () => {
     {
       name: 'Devika Vengurlekar',
       designation: 'Developer',
-      imageSrc: 'images/ym.jpg',
+      imageSrc: 'images/dv.jpeg',
     },
   ];
 
