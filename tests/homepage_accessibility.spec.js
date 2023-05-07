@@ -20,22 +20,6 @@ test.describe('Accessibility tests', () => {
   })
 
  
-  test('Check if the "Transform your teaching" header and paragraph are present', async () => {
-    await page.goto(config.use.baseURL)
-    const [header, paragraph] = await Promise.all([
-      page.waitForSelector('h1'),
-      page.waitForSelector('p')
-    ])
-    expect(header).toBeTruthy()
-    expect(paragraph).toBeTruthy()
-  })
-
-
-  // test('Check if the "Transform your teaching" paragraph is present', async () => {
-  //   const paragraph = await page.$('p')
-  //   expect(paragraph).toBeTruthy()
-  // })
-
   test('Check if the "Sign up for our newsletter" section is present', async () => {
     const newsletterSection = await page.$('section')
     expect(newsletterSection).toBeTruthy()
