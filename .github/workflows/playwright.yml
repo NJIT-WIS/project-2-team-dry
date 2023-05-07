@@ -36,7 +36,7 @@ jobs:
         run: |
           export DISPLAY=:1
           echo "Starting the application..."
-          npm run start & npx wait-on --timeout 50000 http://0.0.0.0:3000
+          npm run start & npx wait-on --timeout 30000 http://0.0.0.0:3000
           echo "Application started."
       - name: Run Playwright tests
         run: npx playwright test --config=playwright.config.js
