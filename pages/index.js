@@ -5,6 +5,12 @@ import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import React, {useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+
+library.add(faNewspaper);
 
 export default function Home({ allPostsData }) {
   const [email, setEmail] = useState('')
@@ -69,8 +75,7 @@ export default function Home({ allPostsData }) {
         </div>
       </div>
       <section style={{textAlign: 'center'}}>
-
-        <h2>Sign up for our newsletter</h2>
+        <a className='fa-icon-wrapper'> <h2>Sign up for our newsletter</h2> <FontAwesomeIcon icon={faNewspaper} size="xs"/></a>
         <input
           type="email"
           placeholder="Enter your email"
