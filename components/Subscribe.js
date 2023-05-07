@@ -48,7 +48,7 @@ const SubscribeContainer = () => {
     onSubmit={(e) => subscribe(e)}
     >
         <h3 className={styles.headingMd}>
-            {state === "success" ? "Success!" : "Contact Us (Subscribe Container)"}
+            {state === "success" ? "Success!" : "Contact Us"}
         </h3>
 
         {state === "sending" && (
