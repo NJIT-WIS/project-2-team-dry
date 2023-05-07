@@ -83,11 +83,13 @@ input[type="email"] {
   margin-bottom: 10px;
 }
 
-.about-header {
+.about-header ,
+.courses-header{
   text-align: center;
 }
 
-.team-members {
+.team-members,
+.courses {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
