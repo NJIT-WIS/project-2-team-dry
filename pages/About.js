@@ -3,7 +3,6 @@ import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout'
 
-
 const About = () => {
   const teamMembers = [
     {
@@ -14,7 +13,7 @@ const About = () => {
     {
       name: 'Yatindra Mahadik',
       designation: 'Developer',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: 'images/ym.jpg',
     },
     {
       name: 'Roopali Sarode',
@@ -24,7 +23,7 @@ const About = () => {
     {
       name: 'Devika Vengurlekar',
       designation: 'Developer',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: 'images/ym.jpg',
     },
   ];
 
