@@ -1,3 +1,8 @@
+import React from 'react'
+import Head from 'next/head'
+import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../components/layout'
+
 
 const About = () => {
   const teamMembers = [
@@ -24,8 +29,13 @@ const About = () => {
   ];
 
   return (
-    <div>
-      <h1 className="about-header">About Us</h1>
+    <Layout home>
+        <Head>
+            <title>MyWebClass.org | About</title>
+        </Head>
+        <section className={utilStyles.headingMd}>
+        <div>
+      <h1 className="about-header">Team Members</h1>
       <div className="team-members">
         {teamMembers.map((member) => (
           <div key={member.name} className="flex-container">
@@ -39,6 +49,8 @@ const About = () => {
         ))}
       </div>
     </div>
+        </section>
+      </Layout>
   );
 };
 
