@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
-        <div style={{width: '1000px', display: 'flex', flexDirection: 'column'}}>
+        <div style={{width: '900px', display: 'flex', flexDirection: 'column'}}>
             <h1> Transform your teaching </h1>
             <p style={{ fontSize: '20px', textAlign: 'justify' }}>MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
             enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience. 
@@ -45,7 +45,7 @@ export default function Home({ allPostsData }) {
             </button>
         </div>
         <div style={{}}>
-            <img style={{ height: '500px', width: '500px'}} src="images/classroom.png" alt="a teacher with students" width="720px"/>
+            <img style={{ height: '450px', width: '450px'}} src="images/classroom.png" alt="a teacher with students" width="720px"/>
         </div>
       </div>
       <section style={{textAlign: 'center'}}>
