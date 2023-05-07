@@ -2,6 +2,8 @@ import '../styles/global.css'
 import Footer from '../components/Footer'
 import { useRouter } from "next/router"
 import { useEffect } from "react"
+import Head from "next/head";
+
 
 // const dotenv = require('dotenv');
 // dotenv.config();
@@ -22,6 +24,9 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
+    <Head>
+        <link rel="shortcut icon" href="/logodry.ico" />
+    </Head>
     
     
   <Component {...pageProps} />
