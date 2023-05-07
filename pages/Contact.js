@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/contact.module.css'
 import Layout, { siteTitle } from '../components/layout'
-import MailchimpFormContainer from '../components/mailchimp'
+import SubscribeContainer from '../components/subscribe'
 
 export default function Contact() {
   return (
@@ -11,10 +11,9 @@ export default function Contact() {
             <title>MyWebClass.org | Contact</title>
         </Head>
         <main className={styles.container}>
-          <MailchimpFormContainer> 
-          </MailchimpFormContainer>
+          <SubscribeContainer>
+          </SubscribeContainer>
         </main>
     </Layout>
   )
 }
-
