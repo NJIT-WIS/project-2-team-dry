@@ -27,6 +27,11 @@ export default function Navbar() {
           <h4 className={styles.navLink}> Contact</h4>
           </Link>
         </li>
+        <li className={styles.navItem}>
+          <Link href="/Privacy">
+          <h4 className={styles.navLink}> Privacy</h4>
+          </Link>
+        </li>
       </ul>
     </nav>
   )
