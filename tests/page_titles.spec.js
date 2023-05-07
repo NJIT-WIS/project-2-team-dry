@@ -18,7 +18,6 @@ async function checkPageTitle(pageUrl, expectedTitle) {
 pages.forEach((page) => {
 
   test(`Page "${page.path}" should have the correct title`, async ({}) => {
-    console.log(page.path)
     const pageUrl = `${config.use.baseURL}${page.path}`;
 
     const expectedTitle = page.title;

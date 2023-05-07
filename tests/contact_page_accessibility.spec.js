@@ -32,16 +32,4 @@ test.describe('Accessibility tests', () => {
       expect(labelElement).toBeTruthy()
     }
   })
-
-
-
-  test('Check accessibility tree for Contact page', async () => {
-    const snapshot = await page.accessibility.snapshot()
-    console.log('Accessibility tree for Contact page:', JSON.stringify(snapshot, null, 2))
-  })
-
-  test('Check page accessibility', async () => {
-    const snapshot = await page.accessibility.snapshot()
-    console.log('Accessibility tree for Contact page:', JSON.stringify(snapshot, null, 2))
-  })
 })
