@@ -9,22 +9,22 @@ const About = () => {
     {
       name: 'Keith Williams',
       designation: 'Instructor',
-      imageSrc: '/images/KW.jpg',
+      imageSrc: 'images/KW.jpg',
     },
     {
       name: 'Yatindra Mahadik',
       designation: 'Developer',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: 'images/ym.jpg',
     },
     {
       name: 'Roopali Sarode',
       designation: 'Developer',
-      imageSrc: '/images/rrs.jpg',
+      imageSrc: 'images/rrs.jpg',
     },
     {
       name: 'Devika Vengurlekar',
       designation: 'Developer',
-      imageSrc: '/images/ym.jpg',
+      imageSrc: 'images/ym.jpg',
     },
   ];
 
