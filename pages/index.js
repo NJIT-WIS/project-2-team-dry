@@ -45,7 +45,6 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-CXE9WXQFQG"
@@ -56,10 +55,23 @@ export default function Home({ allPostsData }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-EBW4CPCF5C', { page_path: window.location.pathname });
+            gtag('config', 'G-CXE9WXQFQG', { page_path: window.location.pathname });
           `,
           }}
         ></script>
+              
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBW4CPCF5C"></script>
+          <script>
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-EBW4CPCF5C');
+            `,
+          }}
+          </script>
       </Head>
       <div style={{display: 'flex', margin: '5rem', justifyContent: 'flex-end', gap: '2rem'}}>
         <div style={{width: '700px', display: 'flex', flexDirection: 'column'}}>
