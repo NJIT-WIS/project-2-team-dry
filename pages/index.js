@@ -36,13 +36,14 @@ export default function Home({ allPostsData }) {
         <div style={{width: '1000px', display: 'flex', flexDirection: 'column'}}>
             <h1> Transform your teaching </h1>
             <p style={{ fontSize: '20px', textAlign: 'justify' }}>MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills,
-            enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience</p>
+            enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience. 
+            Our platform is designed to bring together educators from around the world who are passionate about innovation and learning. Whether you're interested in website development, AI-driven tech, agile methodologies, or lean approaches, our community provides a wealth of knowledge and resources to help you transform your teaching and student learning outcomes</p>
             <button className={indexStyles.buttonStyle}>
                 Courses
             </button>
         </div>
         <div style={{}}>
-            <img style={{ height: '400px', width: '400px'}} src="images/classroom.png" alt="a teacher with students" width="720px"/>
+            <img style={{ height: '500px', width: '500px'}} src="images/classroom.png" alt="a teacher with students" width="720px"/>
         </div>
       </div>
       <section style={{textAlign: 'center'}}>
