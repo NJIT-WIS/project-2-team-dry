@@ -4,12 +4,36 @@ import styles from '../styles/contact.module.css'
 import Link from 'next/link'
 import validator from 'validator'
 
+import i18n from 'i18next'
+import translaionEs from "../locales/es.json"
+import translaionFr from "../locales/fr.json"
+import translaionEn from "../locales/en.json"
+import {initReactI18next, useTranslation} from "react-i18next"
+
+i18n
+.use(initReactI18next)
+.init({
+  resources : {
+    es : {translation: translaionEs},
+    fr : {translation : translaionFr},
+    en : {translation : translaionEn}
+  },
+  lng: "en",
+  fallbackLng : "en",
+  interpolation : {escapeValue : false}
+})
+
 const CustomForm = ({ status, message, onValidated }) => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [emailError, setEmailError] = useState(null);
     const [note, setNote] = useState('');
+
+    const changeLanguage = (event) => {
+        i18n.changeLanguage(event.target.value)
+      }
+      const { t } = useTranslation();
 
     const validateEmail = (event) => {
         setEmail(event.target.value);
@@ -42,17 +66,23 @@ const CustomForm = ({ status, message, onValidated }) => {
     }
 
     return (
+        
         <form 
             className={styles.form}
             onSubmit={(e) => handleSubmit(e)}
         >
+            <select name = "language" onChange={changeLanguage}>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select>
             <h3 className={styles.headingMd}>
-                {status === "success" ? "Success!" : "Contact Us"}
+                {status === "success" ? t('success') : t('contactUs')}
             </h3>
 
             {status === "sending" && (
                 <div className={styles.blink}>
-                sending...
+                {t('sending')}
                 </div>
             )}
             {status === "error" && (
@@ -70,7 +100,7 @@ const CustomForm = ({ status, message, onValidated }) => {
             {status !== "success" ? (
                 <div className={styles.form_fields}>
                     <label className={styles.label}>
-                        Name:
+                        {t('name')}
                     <input
                         label="Name"
                         className={styles.input}
@@ -81,7 +111,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                     />
                     </label>
                     <label className={styles.label}>
-                        Email:
+                        {t('email')}
                     <input
                         label="Email"
                         className={styles.input}
@@ -93,13 +123,13 @@ const CustomForm = ({ status, message, onValidated }) => {
                     {email.length > 0 && emailError && <span style={{color: 'red'}}>{emailError}</span>}
                     </label>
                     <label className={styles.label}>
-                        Note:
+                        {t('note')}
                     <textarea
                         label="Note"
                         className={styles.textarea}
                         onChange={(event) => setNote(event.target.value)}
                         value={note}
-                        placeholder="Write your note..."
+                        placeholder={t('writeYourNote')}
                     />
                     </label>
                 </div>
@@ -107,17 +137,18 @@ const CustomForm = ({ status, message, onValidated }) => {
 
             {status === 'success' ? 
                 <Link href="/" className={styles.button}>
-                    Close
+                    {t('close')}
                 </Link> : 
                 <input
                     className={styles.button}
                     label="subscribe"
                     type="submit"
                     formvalues={[name, email, note]}
+                    value={t('subscribe')}
                 />
             }
         </form>
-    );
+        );
 };
 
 const MailchimpFormContainer = () => {

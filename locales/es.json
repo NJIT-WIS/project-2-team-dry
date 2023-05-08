@@ -1,0 +1,57 @@
+{
+    "about.teamMembers": "Miembros del equipo",
+    "about.instructor": "Instructor",
+    "about.developer": "Desarrollador",
+    "transformYourTeaching": "Transforma tu enseñanza",
+    "myWebClassOffers": "MyWebClass ofrece una oportunidad para equipar a tus estudiantes con habilidades de ingeniería de software de última generación, lo que les permite embarcarse en un viaje de aprendizaje transformador. Descubre tecnologías avanzadas y métodos de enseñanza innovadores que revolucionarán tu experiencia en el aula. Nuestra plataforma está diseñada para reunir a educadores de todo el mundo que son apasionados de la innovación y el aprendizaje. Ya sea que estés interesado en el desarrollo de sitios web, la tecnología impulsada por IA, las metodologías ágiles o los enfoques lean, nuestra comunidad ofrece una gran cantidad de conocimientos y recursos para ayudarte a transformar tu enseñanza y los resultados de aprendizaje de los estudiantes",
+    "courses": "Cursos",
+    "signUpForOurNewsletter": "Regístrate para recibir nuestro boletín",
+    "enterYourEmail": "Ingresa tu correo electrónico",
+    "signUp": "Registrarse",
+    "contactUs": "Contáctanos",
+    "name": "Nombre:",
+    "email": "Correo electrónico:",
+    "note": "Nota:",
+    "writeYourNote": "Escribe tu nota...",
+    "subscribe": "Suscribirse",
+    "success": "¡Éxito!",
+    "sending": "Enviando...",
+    "close": "Cerrar",
+    "emailError": "¡Por favor, introduce un correo electrónico válido!",
+    "title": "MyWebClass.org | Privacidad",
+    "heading": "Política de privacidad y cookies",
+    "intro": "Nos preocupamos por su privacidad. Esta política de privacidad explica qué información personal recopila este sitio web de sus usuarios, cómo se utiliza esa información y con quién se comparte.",
+    "infoHeading": "Información que recopilamos",
+    "infoList": [
+      "Nombre",
+      "Dirección de correo electrónico",
+      "Información sobre su dispositivo, como su dirección IP, tipo de navegador y sistema operativo."
+    ],
+    "useHeading": "Cómo utilizamos su información",
+    "useList": [
+      "Para cumplir con los requisitos legales",
+      "Para mejorar la experiencia del usuario",
+      "Para mejorar el sitio web y los servicios a través del análisis",
+      "Para cumplir con las obligaciones legales",
+      "Para personalizar el contenido y la publicidad"
+    ],
+    "shareHeading": "Compartir información",
+    "shareInfo": "No vendemos, alquilamos ni intercambiamos su información personal con terceros. Sin embargo, podemos compartir su información personal con proveedores de servicios de terceros que nos ayudan en el análisis para proporcionar mejores servicios y productos.",
+    "securityHeading": "Medidas de seguridad",
+    "securityInfo": "Tomamos medidas razonables para proteger su información personal contra el acceso, uso o divulgación no autorizados. Sin embargo, no podemos garantizar la seguridad de su información, ya que ningún método de transmisión por Internet es completamente seguro.",
+    "accessibilityHeading": "Política de accesibilidad",
+    "accessibilityInfo": "Nos comprometemos a garantizar que nuestro sitio web sea accesible para todos, incluidas las personas con discapacidades. Nos esforzamos por cumplir con las Pautas de accesibilidad al contenido web (WCAG) 2.1 nivel AA.",
+    "analyticsHeading": "Google Analytics",
+    "analyticsInfo": "Recopilamos información sobre su uso de nuestro sitio web utilizando Google Analytics. Google Analytics recopila información como con qué frecuencia las personas visitan el sitio, qué páginas visitan cuando lo hacen y qué otros sitios visitaron antes de llegar a nuestro sitio web. Utilizamos los datos de Google Analytics para mejorar nuestro sitio web y la experiencia del usuario. Google Analytics solo recopila la dirección IP que se le asigna el día que visita nuestro sitio web, no su nombre ni otra información de identificación. No combinamos la información recopilada a través de Google Analytics con información personalmente identificable. Google Analytics coloca una cookie persistente en su navegador web para reconocerlo como usuario único la próxima vez que visite el sitio.",
+    "dataRetentionHeading": "Retención y seguridad de datos",
+    "dataRetentionInfo": "Retenemos la información que recopilamos durante el tiempo necesario para cumplir con los fines para los que se recopiló, a menos que la ley exija un período de retención más prolongado. Tomamos medidas razonables para proteger la información que recopilamos contra la pérdida, el robo, el uso indebido y el acceso, la divulgación, la alteración y la destrucción no autorizados.",
+    "rightsHeading": "Tus derechos",
+    "rightsInfo": "Derecho de acceso: los usuarios tienen derecho a solicitar acceso a sus datos personales que son retenidos por el sitio web. Esto incluye información sobre qué datos se están recopilando, cómo se están utilizando y con quién se están compartiendo. Derecho de rectificación: si los datos personales del usuario son inexactos o incompletos, tiene derecho a solicitar que se corrijan o actualicen. Derecho al olvido: los usuarios tienen derecho a solicitar que se eliminen sus datos personales de la base de datos del sitio web. Sin embargo, este derecho no es absoluto y puede estar limitado en ciertas circunstancias.",
+    "changesHeading": "Cambios en esta política",
+    "changesInfo": "Esta política de privacidad puede actualizarse de vez en cuando. Cualquier cambio se le comunicará publicando la política de privacidad revisada en esta página. Le recomendamos que examine nuestra política de privacidad regularmente para conocer los cambios.",
+    "contactHeading": "Contáctenos",
+    "contactInfo": "Por favor, contáctenos en ym336@njit.edu, rs336@njit.edu o dv339@njit.edu si tiene alguna pregunta sobre esta política de privacidad."
+  }
+  
+  
+  
