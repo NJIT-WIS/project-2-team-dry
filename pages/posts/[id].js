@@ -10,6 +10,7 @@ export default function Post({ postData }) {
       <Head>
         <title>{postData.title}</title>
       </Head>
+      <div style={{ display: 'flex', margin: '3rem', justifyContent: 'space-between' }}>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
         <div className={utilStyles.lightText}>
@@ -17,6 +18,7 @@ export default function Post({ postData }) {
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
+      </div>
     </Layout>
   )
 }
