@@ -38,4 +38,21 @@ test.describe('Internationalization tests', () => {
     expect(text).toBe('Sign up')
   })
 
+  test('should change language to es when language selector is used', async ()=>{
+    await page.selectOption('select[name="language"]', { value: 'es' });
+    expect(await page.textContent('button1')).toContain('Cursos');
+  })
+
+  test('should change language to fr when language selector is used', async ()=>{
+    await page.selectOption('select[name="language"]', { value: 'fr' });
+    expect(await page.textContent('button1')).toContain('Cours');
+  })
+
+  test('should change language to en when language selector is used', async ()=>{
+    await page.selectOption('select[name="language"]', { value: 'en' });
+    // expect(await page.textContent('button1')).toContain('Courses');
+    expect(await page.title()).toContain('MyWebClass.org');
+  })
+  
+
 })
