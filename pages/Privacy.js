@@ -65,13 +65,15 @@ export default function Privacy() {
                     <p>{t('changesInfo')}</p>
                     <h2>{t('contactHeading')}</h2>
                     <p>{t('contactInfo')}</p>
-
+                    <div className="language-toggle">
+                        <select name = "language" onChange={changeLanguage}>
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                            <option value="es">Español</option>
+                        </select>
+                     </div>
                 </section>
-                <select name = "language" onChange={changeLanguage}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-            </select>
+               
     </Layout>
   )
 }

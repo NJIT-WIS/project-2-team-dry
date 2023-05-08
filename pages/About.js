@@ -59,16 +59,6 @@ const About = () => {
       <section className={utilStyles.headingMd}>
         <div>
           <h1 className="about-header">{t('about.teamMembers')}</h1>
-          <div className="language-toggle">
-            {/* <button onClick={() => changeLanguage('en')}>English</button>
-            <button onClick={() => changeLanguage('fr')}>Français</button>
-            <button onClick={() => changeLanguage('es')}>Español</button> */}
-            <select name = "language" onChange={changeLanguage}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-            </select>
-          </div>
           <div className="team-members">
             {teamMembers.map((member) => (
               <div key={member.name} className="flex-container">
@@ -84,7 +74,15 @@ const About = () => {
           </div>
         </div>
       </section>
+      <div className="language-toggle">
+            <select name = "language" onChange={changeLanguage}>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
     </Layout>
+    
   );
 };
 

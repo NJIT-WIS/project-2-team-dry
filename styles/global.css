@@ -126,3 +126,9 @@ padding: 10px;
 footer {
   margin-top: 2rem;
 }
+
+.language-toggle {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}

@@ -85,11 +85,13 @@ export default function Home({ allPostsData }) {
           {t('signUp')}
         </button>
       </section>
-      <select name = "language" onChange={changeLanguage}>
+      <div className="language-toggle">
+            <select name = "language" onChange={changeLanguage}>
               <option value="en">English</option>
               <option value="fr">Français</option>
               <option value="es">Español</option>
             </select>
+          </div>
     </Layout>
   );
 }
