@@ -19,6 +19,10 @@
       {
         "path": "/Privacy",
         "title": "MyWebClass.org | Privacy"
+      },
+      {
+        "path": "/Courses",
+        "title": "MyWebClass.org | Courses"
       }
     ]
 }
