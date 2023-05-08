@@ -16,7 +16,7 @@ test.describe('Internationalization tests', () => {
 
  
   test('Check if course button text is in English', async () => {
-    const courseButtonText = await page.$eval('button', el => el.innerText)
+    const courseButtonText = await page.$eval('button1', el => el.innerText)
     expect(courseButtonText).toBe('Courses')
   })
 

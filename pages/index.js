@@ -64,9 +64,9 @@ export default function Home({ allPostsData }) {
         <div style={{ width: '900px', display: 'flex', flexDirection: 'column' }}>
           <h1>{t('transformYourTeaching')}</h1>
           <p style={{ fontSize: '20px', textAlign: 'justify' }}>{t('myWebClassOffers')}</p>
-          <button onClick={() => router.push('/Courses')} className={indexStyles.buttonStyle}>
+          <button1 onClick={() => router.push('/Courses')} className={indexStyles.buttonStyle}>
             {t('courses')}
-          </button>
+          </button1>
         </div>
         <div style={{}}>
           <img style={{ height: '450px', width: '450px' }} src="images/classroom.png" alt="a teacher with students" width="720px" />
