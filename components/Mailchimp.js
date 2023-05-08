@@ -71,11 +71,6 @@ const CustomForm = ({ status, message, onValidated }) => {
             className={styles.form}
             onSubmit={(e) => handleSubmit(e)}
         >
-            <select name = "language" onChange={changeLanguage}>
-              <option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="es">Español</option>
-            </select>
             <h3 className={styles.headingMd}>
                 {status === "success" ? t('success') : t('contactUs')}
             </h3>
@@ -147,6 +142,13 @@ const CustomForm = ({ status, message, onValidated }) => {
                     value={t('subscribe')}
                 />
             }
+            <div className="language-toggle">
+            <select name = "language" onChange={changeLanguage}>
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+            </select>
+          </div>
         </form>
         );
 };
