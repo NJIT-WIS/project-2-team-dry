@@ -1,0 +1,59 @@
+{
+    "about.teamMembers": "Team Members",
+    "about.instructor": "Instructor",
+    "about.developer": "Developer",
+    "transformYourTeaching": "Transform your teaching",
+    "myWebClassOffers": "MyWebClass offers an opportunity to equip your students with state-of-the-art software engineering skills, enabling them to embark on a transformative learning journey. Discover advanced technologies and innovative teaching methods that will revolutionize your classroom experience. Our platform is designed to bring together educators from around the world who are passionate about innovation and learning. Whether you're interested in website development, AI-driven tech, agile methodologies, or lean approaches, our community provides a wealth of knowledge and resources to help you transform your teaching and student learning outcomes",
+    "courses": "Courses",
+    "signUpForOurNewsletter": "Sign up for our newsletter",
+    "enterYourEmail": "Enter your email",
+    "signUp": "Sign up",
+    "contactUs": "Contact Us",
+    "name": "Name:",
+    "email": "Email:",
+    "note": "Note:",
+    "writeYourNote": "Write your note...",
+    "subscribe": "Subscribe",
+    "success": "Success!",
+    "sending": "Sending...",
+    "close": "Close",
+    "emailError": "Please enter a valid Email!",
+    "title": "MyWebClass.org | Privacy",
+    "titleAbout": "MyWebClass.org | About",
+    "heading": "Privacy and Cookies Policy",
+    "intro": "We care for your privacy. This privacy policy explains what personal information this website collects from its users, how that information is used, and who it is shared with.",
+    "infoHeading": "Information we collect",
+    "infoList": [
+      "Name",
+      "Email address",
+      "Information about your device, such as your IP address, browser type, and operating system."
+    ],
+    "useHeading": "How we use your information",
+    "useList": [
+      "To comply with legal requirements",
+      "To improve user experience",
+      "To improvise the website and services through analytics",
+      "To comply with legal obligations",
+      "To personalize the content and advertising"
+    ],
+    "shareHeading": "Sharing of Information",
+    "shareInfo": "We do not sell, rent, or trade your personal information to third parties. However, we may share your personal information with third-party service providers who assist us in analytics for providing better services and products.",
+    "securityHeading": "Security Measures",
+    "securityInfo": "We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, we cannot guarantee the security of your information, as no method of transmission over the internet is completely secure.",
+    "accessibilityHeading": "Accessibility Policy",
+    "accessibilityInfo": "We are committed to ensuring that our website is accessible to everyone, including individuals with disabilities. We strive to comply with the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA.",
+    "analyticsHeading": "Google Analytics",
+    "analyticsInfo": "We collect information about your use of our website using Google Analytics. Google Analytics collects information such as how frequently people visit the site, what pages they visit when they do, and what other sites they visited before arriving to our website. We use the data from Google Analytics to improve our website and user experience. Google Analytics collects just the IP address allocated to you on the day you visit our website, not your name or other identifying information. We do not combine information gathered via Google Analytics with personally identifiable information. Google Analytics places a persistent cookie on your web browser to recognize you as a unique user the next time you visit the site.",
+    "dataRetentionHeading": "Data retention and security",
+    "dataRetentionInfo": "We retain the information we collect for as long as necessary to fulfill the purposes for which it was collected, unless a longer retention period is required by law. We take reasonable measures to protect the information we collect from loss, theft, misuse, and unauthorized access, disclosure, alteration, and destruction.",
+    "rightsHeading": "Your rights",
+    "rightsInfo": "Right to access: Users have the right to request access to their personal data that is held by the website. This includes information about what data is being collected, how it's being used, and who it's being shared with. Right to rectification: If the user's personal data is inaccurate or incomplete, they have the right to request that it be corrected or updated. Right to erasure: Users have the right to request that their personal data be deleted from the website's database. However, this right is not absolute and may be limited in certain circumstances.",
+    "changesHeading": "Changes to This Policy",
+    "changesInfo": "This Privacy Policy may be updated from time to time. Any changes will be communicated to you by posting the revised Privacy Policy on this page. We urge that you examine our Privacy Policy on a regular basis for changes.",
+    "contactHeading": "Contact us",
+    "contactInfo": "Please contact us at ym336@njit.edu, rs336@njit.edu or dv339@njit.edu if you have any queries regarding this Privacy Policy."
+  }
+  
+  
+  
+  
